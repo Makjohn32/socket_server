@@ -27,7 +27,7 @@ def handle_client(conn, addr):
 
 
 def start():
-    server.listen(0)
+    server.listen()
     print("server is listening on %s" %SERVER)
     while True:
         conn, addr = server.accept()
